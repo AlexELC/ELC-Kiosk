@@ -1,0 +1,220 @@
+/*Loading style*/
+#load_screen {
+  position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+  background: #000;
+}
+
+#loading {
+  color: #FFF;
+  text-align: center;
+  margin: auto;
+  font-size: 4vh;
+}
+
+.loader {
+    border: 16px solid #eee;
+    border-top: 16px solid #67aac3;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/*main body*/
+body html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  text-shadow: 1px 1px 16px black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  background-color:  rgba(80, 89, 120, 0.3);
+}
+
+  ul li {
+    display: inline-block;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited  {
+  text-decoration: none;
+  color: blue;
+}
+
+.body {
+  text-align: center;
+}
+
+
+#created {
+  margin: 20px;
+  margin-bottom: 0;
+  text-align: center;
+  color: white;
+}
+
+#created a {
+  text-decoration: none;
+  color: white;
+}
+
+#created a:hover {
+  font-size: 20px;
+}
+
+/*Mobile view*/
+@media screen and (max-width: 500px) {
+  ul {
+     display: none;
+  }
+  
+  .local {
+    font-size: 2.8vw;
+  }
+
+  .title {
+    font-size: 6vw;
+  }
+  
+  .stats {
+    font-size: 5vw;
+  }
+
+  .temp {
+   font-size: 21vw;
+  }
+
+  .temp img{
+   width: 25%;
+  }
+
+  .condition p {
+    font-size: 8vw;
+    margin: 0;
+  }
+  
+  #created {
+    font-size: 10px;
+  }
+  
+  #created a:hover {
+  font-size: 13px;
+}
+}
+
+@media screen and (min-width: 500px) {
+
+  .local {
+    font-size: .8em;
+    margin-top: 10px;
+  }
+  
+  .local h2 {
+    margin: 0;
+  }
+
+  .date, .city {
+    display: inline-block;
+  }
+
+  .city {
+    width: 49%;
+    text-align: left;
+  }
+  .date {
+    text-align: right;
+    width: 50%;
+  }
+
+  .title {
+    font-size: 1.9em;
+  }
+
+  .temp {
+    font-size: 7em;
+  }
+
+  .temp img {
+    width: 140px;
+  }
+
+  .condition p {
+    font-size: 2em;
+    margin: 0;
+  }
+
+  .stats {
+    font-size: .8em;
+  }
+
+  .locinfo {
+    display: inline-block;
+    margin: 22px;
+  }
+  
+  ul li {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+@media screen and (min-width: 720px){
+  h1, h2, h3 {
+    margin: 4%;
+  }
+  .local {
+    font-size: 1.1em;
+    margin-top: 0;
+  }
+
+  .stats {
+    font-size: 1.3em;
+  }
+
+  .forcast {
+    width: 100%
+  }
+  
+  ul li {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+  .body {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  ul li {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
