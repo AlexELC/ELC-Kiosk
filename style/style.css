@@ -1,0 +1,424 @@
+html {
+    padding: 0;
+    margin: 0;
+    color: white;
+    overflow-y: hidden;
+    Overflow-x: hidden;
+
+  }
+    .element::-webkit-scrollbar { width: 0 !important;
+overflow: hidden;
+}
+body{
+    padding: 0;
+    margin: 0;
+
+}
+#webcontainer {
+    width: 60%;
+    height: 100%;
+    float: right;
+    padding: 0;
+    margin: 0;
+  
+    overflow-y: hidden;
+    Overflow-x: hidden;
+    margin-top: 15px;
+
+}
+iframe {
+    width: 95%;
+    height: 94%;
+    padding: 0;
+    margin: 0;
+    overflow:hidden;
+
+}
+
+#navbar{
+    height: 100%;
+    width: 40%;
+    color: white;
+    position: absolute; 
+    z-index: 300;
+   float: left;
+   margin: 0;
+padding: 0;
+}
+.btnhome {
+    height: 25%;
+    width: 47%;
+    border: 4px solid white;
+  background-color: #f15b2b;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: 2%;
+ 
+}
+.btnfaq {
+    height: 25%;
+    width: 47%;
+    border: 4px solid white;
+  background-color: #f15b2b;
+  color: white;
+  padding: 0;
+
+  cursor: pointer;
+  float:right;
+  margin-top: 15px;
+  margin-right: 2%;
+ 
+}
+
+.btnweekend {
+    height: 40%;
+    width: 96%;
+  border: 4px solid white;
+  background-color: #f15b2b;
+  color: white;
+  padding: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  padding-top: 15px;
+  margin-top: 15px;
+  margin-left: 2%;
+  margin-right: 2%;
+ 
+}
+
+.btnPush {
+    height: 25%;
+    width: 30%;
+    border: 4px solid white;
+  background-color: #f15b2b;
+  color: white;
+  padding: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  padding-top: 15px;
+  margin-top: 15px;
+  margin-left: 2%;
+ 
+}
+.btnRefresh {
+    height: 25%;
+    width: 30%;
+    border: 4px solid white;
+  background-color: #f15b2b;
+  color: white;
+  padding: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  padding-top: 15px;
+  margin-top: 15px;
+  margin-left: 2%;
+ 
+}
+.btnFull{
+    height: 25%;
+    width: 30%;
+    border: 4px solid white;
+  background-color: #f15b2b;
+  color: white;
+  padding: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  padding-top: 15px;
+  margin-top: 15px;
+  margin-left: 2%;
+}
+
+#Wrap{
+    width:100%;
+    height: 100%;
+z-index: -1;
+background-image: url("img/Sample_Orange.jpg");
+
+
+}
+
+
+
+
+/* This is a to start the fullscreen iFrame stuff */ 
+
+
+
+#container {
+  text-align: center;
+  height: 100%;
+}
+
+.button {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: 6px 12px;
+}
+.info {
+  padding: 20px;
+}
+.error {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px;
+}
+
+
+
+/* Weather starts here */ 
+/* Weather starts here */ 
+/* Weather starts here */ 
+/* Weather starts here */ 
+/* Weather starts here */ 
+/* Weather starts here */ 
+/* Weather starts here */ 
+/* Weather starts here */ 
+/* Weather starts here */ 
+/* Weather starts here */ 
+/* Weather starts here */ 
+/* Weather starts here */ 
+/* Weather starts here */ 
+/* Weather starts here */ 
+/* Weather starts here */ 
+/* Weather starts here */ 
+/* Weather starts here */ 
+/* Weather starts here */ 
+/* Weather starts here */ /* Weather starts here */ /* Weather starts here */ 
+/* Weather starts here */ /* Weather starts here */ /* Weather starts here */ 
+/* Weather starts here */ /* Weather starts here */ /* Weather starts here */ 
+/* Weather starts here */ /* Weather starts here */ /* Weather starts here */ 
+/* Weather starts here */ /* Weather starts here */ /* Weather starts here */ 
+/* Weather starts here */ /* Weather starts here */ /* Weather starts here */ 
+/* Weather starts here */ /* Weather starts here */ /* Weather starts here */ 
+
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+.weather{
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  
+  position: relative;
+  -webkit-box-shadow: 2px 3px 7px 0px rgba(50, 50, 50, 0.8);
+  -moz-box-shadow: 2px 3px 7px 0px rgba(50, 50, 50, 0.8);
+  box-shadow: 2px 3px 7px 0px rgba(50, 50, 50, 0.8);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.city-title,
+.city-weather-temperature,
+.city-weather-description,
+.city-weather-icon {
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #323D54;
+  margin: auto;
+  display: block;
+}
+
+.city-title {
+  font-size: 2.5em;
+
+}
+
+hr {
+  border: 0;
+  height: 0;
+
+  background-image: linear-gradient(to right, rgba(20, 24, 33, 0), rgba(20, 24, 33, 0.75), rgba(20, 24, 33, 0));
+  width: 100%;
+
+
+}
+
+.city-weather-temperature {
+  font-size: 2em;
+}
+
+.city-weather-description {
+  font-size: 1em;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.content {
+  position: absolute;
+  bottom: 0px;
+  z-index: 9999;
+}
+
+.wi {
+  display: inline-block;
+  font-family: 'weathericons';
+  color: #323D54;
+  font-size: 1em;
+  line-height: 2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* THESE ARE THE BOTTOM ICONS */
+#smallIcon {
+  font-size: 1em;
+
+
+}
+.add-info {
+  text-align: left;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  color: #323D54;
+}
+
+.bottom {
+  width: 100%;
+  margin: 0;
+  padding-top: 0;
+  position: absolute;
+  bottom: 0px;
+  z-index: 9999;
+}
+
+.nav-info {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+ul {
+  margin-bottom: 0;
+  text-align:center;
+}
+
+#details {
+  display: flex;
+}
+
+ul {
+  justify-content:  space-between;
+  list-style-type: none;
+  padding: 0;
+  margin-top:-10px;
+}
+
+.celsius {
+  cursor: pointer;
+}
+
+.fahrenheit {
+  cursor: pointer;
+}
+
+.celsius:hover {
+  color: #fff;
+}
+
+.fahrenheit:hover {
+  color: #fff;
+}
+
+.date{
+  font-size: 0.8em;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  color: #323D54;
+  float: left;
+  margin: 0;
+}
+
+#forio{
+  font-size: 0.8em;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  color: #323D54;
+  float: right;
+  margin-top: -30px;
+}
+#forio:hover {
+  font-size: 0.8em;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  float: right;
+  margin: 8px 5px 2px 10px;
+  text-decoration: none;
+}
+
+/* loader */
+.loader,
+.loader:before,
+.loader:after {
+  background: #323D54;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader {
+  color: #323D54;
+  text-indent: -9999em;
+  margin: auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+/* Weather ends here */ 
