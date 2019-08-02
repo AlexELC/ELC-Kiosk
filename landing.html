@@ -240,7 +240,7 @@ h1 {
   margin-left: 50px;
 }
 
-/* The button used to open the sidebar */
+/* The button is used to open the sidebar */
 .openbtn {
   font-size: 20px;
   cursor: pointer;
@@ -260,7 +260,6 @@ h1 {
   padding: 20px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
@@ -269,13 +268,11 @@ h1 {
 </style>
 
 <script>
-/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
 function openNav() {
   document.getElementById("mySidebar").style.width = "450px";
   document.getElementById("main").style.marginLeft = "450px";
 }
 
-/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
@@ -327,24 +324,14 @@ function closeNav() {
         <h2>Collapsed Sidebar</h2>
         <p>Content...</p>
       </div>
-    
-    
+
     
     </div>
-
+    </center>    
 </div>
 
-<script>
 
-$(function(){ // .ready() callback, is only executed when the DOM is fully loaded
-        var length = $("p").length;
-        // The following will log 1 to the console, as the paragraph exists.
-        // This is the evidence that this method is only called when the
-        // DOM is fully loaded
-        console.log(length);
-</script>
 
 
 </body>
 </html>
-
